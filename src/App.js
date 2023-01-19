@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './estilo.css';
 
 class App extends Component {
   constructor(props){
@@ -37,7 +36,7 @@ class App extends Component {
       <div className='container'>
         <h1>Biscoito da Sorte</h1>
         <img src={this.state.biscoitoImagem} alt="Biscoito da sorte"/>
-        <h3>{this.state.frase === '' ? '"Aqui apareçar a frase..."' : this.state.frase}</h3>
+        <h3>{this.state.frase === '' ? '"Aqui apareçar a frase..."' : '"' + this.state.frase + '"'}</h3>
         <button onClick={this.abrir}>Abrir biscoito</button>
       </div>
     );
